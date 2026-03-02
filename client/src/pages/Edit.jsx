@@ -39,7 +39,6 @@ const Edit = () => {
     },
   });
 
-  // Fetch existing post
   useEffect(() => {
     axios.get(`http://localhost:5000/api/posts/${id}`).then((res) => {
       setPostData({

@@ -11,6 +11,7 @@ import PostDetails from "./pages/PostDetails";
 import Edit from "./pages/Edit";
 import MyBlogs from "./pages/Dashboard/MyBlogs";
 import Setting from "./pages/Dashboard/Setting";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Container maxWidth="xlg">
           <Routes>
             <Route path="/" element={<Listing />} />
+            <Route path="*" element={<NotFound />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             <Route path="/new" element={<NewPost />} />
